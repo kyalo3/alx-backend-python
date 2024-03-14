@@ -3,6 +3,6 @@
 from typing import Iterable, Sequence, List, Tuple, Any
 
 
-def zoom_array(lst: Tuple[Any, ...], factor: int) -> Tuple[Any, ...]:
+def zoom_array(lst: Tuple, factor: int) -> List:
 
     return tuple(x * factor for x in lst)
