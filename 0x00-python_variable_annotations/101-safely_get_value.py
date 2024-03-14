@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """function add type annotations"""
-from typing import Callable, Iterator, Union, Optional, Sequence, Any, TypeVar
+from typing import Callable, Iterator, Union, Sequence, Any, TypeVar, Mapping
 T = TypeVar('T')
 
 
