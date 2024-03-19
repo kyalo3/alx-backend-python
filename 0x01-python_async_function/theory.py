@@ -11,7 +11,7 @@ def odds(start, stop):
 
 def randn():
     """randn function to illustrate coroutines"""
-    time.sleep(3)
+    time.sleep(1)
     return randint(1, 10)
 
 def main():
