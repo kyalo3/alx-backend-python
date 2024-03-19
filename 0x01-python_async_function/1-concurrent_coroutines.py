@@ -3,10 +3,11 @@
 import asyncio
 import random
 from typing import List
+from _basic_async_syntax import wait_random
 
 
-async def wait_n(n: int, max_delay: int = 10) -> List[float]:
+async def wait_n(n: int, max_delay: int) -> list:
     """async function that waits for a random delay"""
-    delay = random.uniform(0, max_delay)
-    await asyncio.sleep(*tasks)
-    return sorted(delays)
+    tasks = [wait_random(max_delay) for _ in range(n)]
+    results = await asyncio.gather(*tasks)
+    return results
