@@ -7,6 +7,8 @@ from typing import List
 from _basic_async_syntax import wait_random
 
 
+wait_random = __import__('0-basic_async_syntax').wait_random
+
 async def wait_random(max_delay: int = 10) -> float:
     """async function that waits for a random delay"""
     delay = random.uniform(0, max_delay)
